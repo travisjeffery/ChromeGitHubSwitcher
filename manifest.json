@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub implementation switcher",
+  "description": "Switch between header (.h) and implementation (.m) files on GitHub via familiar Xcode keybindings.",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "https://github.com/"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": [ "background.js" ]
+  },
+  "commands": {
+    "jump-to-next-couterpart": {
+      "suggested_key": {
+        "mac": "Command+MacCtrl+Up"
+      },
+      "description": "Jump to Next Counterpart"
+    },
+    "jump-to-previous-couterpart": {
+      "suggested_key": {
+        "mac": "Command+MacCtrl+Down"
+      },
+      "description": "Jump to Previous Counterpart"
+    }
+  }
+}
